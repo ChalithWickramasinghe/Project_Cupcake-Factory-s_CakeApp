@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvappname"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
+        android:text="The Cupcake Factory"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ibtncake"
+        android:layout_width="217dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvappname"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/txvsub"
+        android:layout_width="294dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="The Perfect Sweets For Any Occation"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvappname" />
+
+    <Button
+        android:id="@+id/btnAdmSignUp"
+        android:layout_width="232dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="348dp"
+        android:text="Admin Account"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvappname" />
+
+    <Button
+        android:id="@+id/btnUserSignUp"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:text="User Account"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdmSignUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
